@@ -14,37 +14,51 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  padding-left: 10vw;
+}
+
 /* Header Section */
 .header {
   height: 5.6rem;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
 }
 
 .header__left-section {
-  width: 16.9rem;
-  background-color: beige;
+  width: 20vw;
   display: flex;
   align-items: center;
+  padding-right: 3em;
 }
 
-.header__left-section img {
-  padding: 0 2rem;
-  height: 4rem;
+.header__left-section img,
+.header__right-section img {
+  margin: 0 2rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.header__left-section img[alt="youtube logo"] {
+  max-height: 4rem;
+  padding-right: 2rem;
 }
 
 .header__middle-section {
   flex: 1;
-  margin: 0 3.5rem 0 7rem;
-  max-width: 50rem;
-  background-color: aquamarine;
+  margin: 0 3.5rem 0 6rem;
+  width: 50rem;
+  max-width: 52vw;
   display: flex;
   align-items: center;
 }
 
 .header__middle-section input::placeholder {
   font-family: "Roboto", sans-serif;
-  color: grey;
+  color: rgb(226, 222, 222);
   font-size: 2rem;
 }
 
@@ -52,29 +66,48 @@ html {
 .header__middle-section button,
 .header__middle-section img {
   height: 4rem;
-}
-
-.search-bar {
-  width: 100%;
-}
-
-.header__middle-section button {
   margin: -1px;
 }
 
-.microphone-icon-btn {
+.search-bar {
+  flex: 1;
+  padding-left: 1rem;
+  font-size: 2rem;
+  border: 1px solid rgb(166, 165, 165);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.03);
+}
+
+.header__middle-section button:nth-last-of-type(1) {
   border-radius: 50%;
-  margin: 10px;
+  margin: 0.25rem;
+  border: none;
+  background-color: rgb(244, 242, 242);
+  padding: 0 0.25rem;
 }
 
 .header__right-section {
-  width: 22.5rem;
-  background-color: palevioletred;
+  max-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 1;
 }
 
 .profile-picture {
   width: 40px;
   border-radius: 50%;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background-color: aquamarine;
+  width: 10vw;
+  position: fixed;
+  left: 0;
+  top: 5.6rem;
+  bottom: 0;
 }
 
 /* MAIN BODY SECTION */
