@@ -16,10 +16,7 @@ html {
 
 body {
   padding-top: 8rem;
-}
-
-main {
-  padding-left: 11vw;
+  padding-left: 9.5rem;
   margin-right: 3rem;
 }
 
@@ -51,6 +48,7 @@ main {
   margin: 0 2rem;
   height: 3rem;
   width: 100%;
+  cursor: pointer;
 }
 
 .header__left-section img[alt="youtube logo"] {
@@ -78,6 +76,10 @@ main {
 .header__middle-section img {
   height: 4rem;
   margin: -1px;
+}
+
+.header__middle-section img {
+  cursor: pointer;
 }
 
 .search-bar {
@@ -116,12 +118,42 @@ main {
 /* SIDEBAR */
 
 .sidebar {
-  background-color: aquamarine;
+  background-color: white;
   width: 8rem;
   position: fixed;
   left: 0;
   top: 5.6rem;
   bottom: 0;
+  padding-top: 2.4rem;
+}
+.sidebar a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.sidebar li {
+  list-style-type: none;
+  display: block;
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar li:hover {
+  background-color: rgb(216, 212, 212);
+}
+
+.sidebar__links img {
+  height: 7.6rem;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* MAIN BODY SECTION */
