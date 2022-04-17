@@ -195,3 +195,84 @@ body {
   row-gap: 2rem;
   width: 100%;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+  body {
+    margin: 0 auto;
+    font-size: 1rem;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+  }
+
+  .sidebar {
+    top: 85vh;
+    background-color: white;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .sidebar__links {
+    flex-direction: row;
+  }
+
+  .sidebar__links img {
+    height: 5rem;
+    padding-top: 0;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+  .video-info-grid {
+    margin-left: 1.5rem;
+  }
+  .menu {
+    display: none;
+  }
+  .header__left-section {
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    margin-left: 1rem;
+  }
+
+  .header__left-section .yt-logo {
+    min-width: 10rem;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .header__middle-section {
+    margin: 0;
+    justify-content: flex-end;
+    width: 5rem;
+  }
+
+  .header__middle-section .search-bar,
+  .microphone-icon-btn {
+    display: none;
+  }
+
+  .header__right-section img {
+    display: none;
+  }
+
+  .header__right-section img:last-of-type {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 3rem;
+  }
+
+  .search-icon-btn {
+    border: none;
+    background-color: white;
+  }
+
+  .search-icon-btn img {
+    height: 3rem;
+  }
+}
